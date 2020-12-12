@@ -4,6 +4,7 @@ package org.saltedfish.thread.basicusageofthreads;
  * Java线程优先级
  * 默认为5 数字越大优先级越高
  * 【1，10】
+ * 最大值为线程组的优先级
  */
 public class ThreadPriorityDemo {
     public static void main(String[] args) {
