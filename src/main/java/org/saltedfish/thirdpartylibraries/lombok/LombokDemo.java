@@ -8,6 +8,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.Value;
 
 /**
  * @Setter  提供setter方法
@@ -26,6 +27,15 @@ import lombok.Setter;
 @Data
 @Builder
 class Person {
+    private int age;
+    private String name;
+}
+
+/**
+ * @Value 有参构造方法 所有属性变成final
+ */
+@Value
+class dog {
     private int age;
     private String name;
 }
