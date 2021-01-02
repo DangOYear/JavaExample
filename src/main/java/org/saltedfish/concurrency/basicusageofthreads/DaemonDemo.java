@@ -1,4 +1,4 @@
-package org.saltedfish.thread.basicusageofthreads;
+package org.saltedfish.concurrency.basicusageofthreads;
 
 /**
  * 有些线程执行一些诸如定时任务等

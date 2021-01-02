@@ -1,6 +1,7 @@
-package org.saltedfish.thread.lockandsynchronization;
+package org.saltedfish.concurrency.lockandsynchronization;
 
-class Caculate {
+
+class CalculateSyn {
     int count = 0;
 
     public void add(int n) {
@@ -18,11 +19,11 @@ class Caculate {
 
 public class SynchronizedDemo {
     public static void main(String[] args) {
-        Caculate caculate = new Caculate();
+        CalculateSyn calculate = new CalculateSyn();
         Thread threadAdd = new Thread(() -> {
             for (int i = 0; i < 10; i++) {
-                caculate.add(1);
-                System.out.println("add:" + caculate.count);
+                calculate.add(1);
+                System.out.println("add:" + calculate.count);
                 try {
                     Thread.sleep(300);
                 } catch (InterruptedException e) {
@@ -32,8 +33,8 @@ public class SynchronizedDemo {
         });
         Thread threadDec = new Thread(() -> {
             for (int i = 0; i < 10; i++) {
-                caculate.dec(1);
-                System.out.println("dec:" + caculate.count);
+                calculate.dec(1);
+                System.out.println("dec:" + calculate.count);
                 try {
                     Thread.sleep(300);
                 } catch (InterruptedException e) {

@@ -1,4 +1,4 @@
-package org.saltedfish.thread.basicusageofthreads;
+package org.saltedfish.concurrency.basicusageofthreads;
 
 /**
  * Java线程优先级

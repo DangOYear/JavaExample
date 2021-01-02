@@ -1,4 +1,4 @@
-package org.saltedfish.thread.basicusageofthreads;
+package org.saltedfish.concurrency.basicusageofthreads;
 
 import java.util.concurrent.*;
 
