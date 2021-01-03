@@ -2,9 +2,6 @@ package org.saltedfish.concurrency.conditionwaitnotify;
 
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
 
 class ProducerAndConsumerWaitNotify {
 
