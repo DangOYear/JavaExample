@@ -24,7 +24,7 @@ class ProducerAndConsumerWaitNotify {
 
 public class WaitNotify {
     public static void main(String[] args) {
-        ProducerAndConsumerCondition producerAndCosumer = new ProducerAndConsumerCondition();
+        ProducerAndConsumerWaitNotify producerAndCosumer = new ProducerAndConsumerWaitNotify();
         Thread producer = new Thread(() -> {
             for (int i = 0; i < 10; i++) {
                 System.out.println("produce:" + i);
